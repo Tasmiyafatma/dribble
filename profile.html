@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div class="account-creation-container mt-2 px-4">
+            <img src="./Images/icon_in_pink.png" alt="comapny icon in pink" class=" me-4" height="100px" width="100px" >
+            <div  class="user-profile-input p-2">
+                <h2 class="fw-bold">Welcome! Let's create your profile</h2>
+                <p class="mt-3 fw-bold" style="opacity: 0.5;"> Let other gets to know better! You can do these later</p>                
+
+                <div class="avatar-upload-section  mt-5">
+                     <h5 class="fw-bold px-2"> Add an avatar</h5>
+                    <div class="image-upload-section d-flex  mt-4">
+                        <div class="d-flex image-display me-5">
+                        </div>
+
+                        <div class=" image-upload-options  mt-3">
+                            
+                            <form class="select-image">
+                                <input type="file" id="myFile" name="filename" accept="image/*"  style="display: none;" onchange="displayImage(this)">
+                                <!-- Create a custom label -->
+                                <label for="myFile" class="custom-file-label fw-bold">Choose Image</label>
+                            </form>
+                            
+                            <p class="text fw-bold mt-4"> > Or choose one of your default </p>
+                        </div>
+                    </div>
+
+                    <div class="location-section mt-5">
+                        <h5 class="fw-bold mb-4"> Add your Location<h5>
+                        <input class="location-input" type="text" placeholder="Enter a Location" oninput="onChnageLocation(event)">
+                        <hr class="mt-0">
+                    </div>
+
+                    <a href="./signup_reason.html" class="nav-link"> <button type="button" class="next-button mt-5  py-1" disabled id="next-button"> Next</button> </a>
+                    <p class="ps-4 pt-2 text-secondary" id="return-text">or Press RETURN</p>
+                </div>
+
+
+            </div> 
+
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

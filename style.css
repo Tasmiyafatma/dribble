@@ -1,0 +1,277 @@
+.company-info {
+    width: 527px;
+    height: 756px;
+    background-color: rgb(228, 211, 123);
+    padding: 10px;
+}
+
+.signin-action {
+    color: rgb(101, 101, 235);
+}
+
+.company-info .company-name {
+    margin-left: 30px;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 26px;
+}
+
+.company-info .company-detail {
+    margin-left: 30px;
+    margin-right: 55px;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.company-info .side-box-image {
+    margin-left: 30px;
+    width: 450px;
+    height: 400px;
+
+}
+
+.company-info .side-footer {
+    margin-left: 30px;
+
+}
+
+.main-container .sign-in-details {
+    width: 100%;
+}
+
+.sign-in-details .sign-up-info {
+    width: 64%;
+    margin: 30px auto;
+}
+
+.sign-up-info .signup-title {
+    font-weight: 600;
+}
+
+.user-input {
+    border-radius: 5px;
+}
+
+.terms-and-policies {
+    color: rgb(9, 67, 147);
+}
+
+.create-account-container .create-account-button {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(252, 97, 164);
+}
+
+.sign-up-info .site-protection-terms {
+    width: 310px;
+    font-size: 13px;
+}
+
+
+/* css of profile.html file */
+
+
+.account-creation-container .company-name {
+    padding-left: 35px;
+    color: rgb(249, 80, 153);
+}
+
+.account-creation-container .user-profile-input {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.image-display {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-upload-options .image-upload-button {
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+}
+
+.text {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.location-section .location-input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.next-button {
+    border: none;
+    color: white;
+    border-radius: 7px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgb(249, 80, 153);
+}
+
+.custom-file-label {
+    padding: 8px 12px;
+    border: 0.5px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* signup rason css */
+
+.header .header-back-icon {
+    margin-top: 32px;
+}
+
+.container {
+    text-align: center;
+
+}
+
+.user-choose-section {
+    margin-top: 48px;
+    gap: 30px;
+}
+
+/* .user-choose-section .section {
+    margin-right: 108px;
+} */
+
+.user-choose-section .user-option {
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.form-check-content .text-body {
+    margin-left: 75px;
+    padding: 2px;
+    font-size: small;
+    width: 215px;
+    display: none;
+
+}
+
+.user-option {
+    width: 270px;
+    height: 330px;
+}
+
+.cart-selector {
+    padding-top: 90px;
+    position: relative;
+}
+
+.cart-selector img {
+    position: absolute;
+    top: -130px;
+    left: 88px;
+
+}
+
+#user-instruction {
+    display: none;
+}
+
+#return-instruction {
+    display: none;
+}
+
+/* css of confirmation.html page */
+
+.footer-section {
+    margin-top: 120px;
+}
+
+.end-section .upload-button {
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(249, 80, 153);
+}
+
+.footer-section .active-link {
+    opacity: 1;
+    color: rgb(249, 80, 153);
+}
+
+.next-button:disabled {
+    opacity: 0.4;
+}
+
+
+/* media query */
+
+
+@media (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .company-info {
+        width: 87%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .side-box-image{
+        margin-left: 0 !important;
+        width: 307px !important;
+    }
+
+    .sign-in-header {
+        margin-left: 51px;
+        width: 207px;
+    }
+
+    .sign-up-info{
+        left: 0 !important;
+        width: 358px !important;
+    }
+
+    .user-profile-input {
+        width: 80% !important;
+    }
+
+    .image-upload-section{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .main-container {
+        flex-direction: column;
+        width: 101%;
+    }
+
+    .company-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .user-choose-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .end-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
